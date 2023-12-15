@@ -17,19 +17,49 @@ namespace ACP
 
         public DataTable getRecord(string query) {
             //fetch all record
-            try{
+            //try{
                 SqlConnection conn = getConnection();
                 SqlCommand cmd = new SqlCommand(query,conn);
                 SqlDataAdapter adt = new SqlDataAdapter(cmd);
                 dt = new DataTable();
                 adt.Fill(dt);
-           
-            }
-            catch (Exception ex)
-            {
-                
-               MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Error);
-            }
+
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+
+            return dt;
+        }
+
+
+        //fetch all product and tables connected/ linked to it
+        public DataTable getRecords(string query, string action, string desc, string desc2, string id, string id2, string desc3)
+        {
+            //fetch all record
+            //try{
+            SqlConnection conn = getConnection();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@action", action);
+            cmd.Parameters.AddWithValue("@desc", desc);
+            cmd.Parameters.AddWithValue("@sdGroupID", id);
+            cmd.Parameters.AddWithValue("@sdDesc", desc2);
+            cmd.Parameters.AddWithValue("@itemModelID", id2);
+            cmd.Parameters.AddWithValue("@itemModelDesc", desc3);
+
+            SqlDataAdapter adt = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            adt.Fill(dt);
+
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
 
             return dt;
         }

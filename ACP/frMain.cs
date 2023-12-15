@@ -47,6 +47,20 @@ namespace ACP
                     sup.Show();
                     break;
 
+                case "storage_dimension_group":
+                    frmStorageGroup sdg = new frmStorageGroup { TopLevel = false };
+                    pBody.Controls.Add(sdg);
+                    sdg.BringToFront();
+                    sdg.Show();
+                    break;
+
+                case "item_model_group":
+                    frmItemModelGroup img = new frmItemModelGroup { TopLevel = false };
+                    pBody.Controls.Add(img);
+                    img.BringToFront();
+                    img.Show();
+                    break;
+
                 default:
                     break;
             }

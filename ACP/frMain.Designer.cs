@@ -29,49 +29,60 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frMain));
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Product Management");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Supplier Management");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Process", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2});
             System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Category Hierarchy");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Setup", new System.Windows.Forms.TreeNode[] {
-            treeNode4});
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Warehouse & Inventory", 6, 6, new System.Windows.Forms.TreeNode[] {
-            treeNode3,
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Storage Dimension Group");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Item Model Group");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Tracking Dimension Group");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Reservation Hierarchy");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Product", new System.Windows.Forms.TreeNode[] {
             treeNode5,
-            treeNode6});
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Process");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Setup");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Retail", 7, 7, new System.Windows.Forms.TreeNode[] {
-            treeNode8,
-            treeNode9,
-            treeNode10});
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Process");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Setup");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Human Resource", 8, 8, new System.Windows.Forms.TreeNode[] {
-            treeNode12,
+            treeNode6,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Setup", new System.Windows.Forms.TreeNode[] {
+            treeNode4,
+            treeNode9});
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Warehouse & Inventory", 6, 6, new System.Windows.Forms.TreeNode[] {
+            treeNode3,
+            treeNode10,
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Process");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Setup");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Retail", 7, 7, new System.Windows.Forms.TreeNode[] {
             treeNode13,
-            treeNode14});
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Process");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Setup");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Accounting", new System.Windows.Forms.TreeNode[] {
-            treeNode16,
+            treeNode14,
+            treeNode15});
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Process");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Setup");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Human Resource", 8, 8, new System.Windows.Forms.TreeNode[] {
             treeNode17,
-            treeNode18});
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Process");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Setup");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Administration", 4, 4, new System.Windows.Forms.TreeNode[] {
-            treeNode20,
+            treeNode18,
+            treeNode19});
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Process");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Setup");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Accounting", new System.Windows.Forms.TreeNode[] {
             treeNode21,
-            treeNode22});
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frMain));
+            treeNode22,
+            treeNode23});
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Process");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Setup");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Reports");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Administration", 4, 4, new System.Windows.Forms.TreeNode[] {
+            treeNode25,
+            treeNode26,
+            treeNode27});
             this.pHeader = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pSidebar = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,12 +90,11 @@
             this.imageModule = new System.Windows.Forms.ImageList(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.PictureBox();
             this.pBody = new System.Windows.Forms.Panel();
             this.pHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.pSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // pHeader
@@ -97,6 +107,19 @@
             this.pHeader.Name = "pHeader";
             this.pHeader.Size = new System.Drawing.Size(977, 30);
             this.pHeader.TabIndex = 1;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(950, 7);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(15, 16);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnClose.TabIndex = 3;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label1
             // 
@@ -150,59 +173,69 @@
             treeNode3.Text = "Process";
             treeNode4.Name = "catHierarchy";
             treeNode4.Text = "Category Hierarchy";
-            treeNode5.Name = "cWareSetup";
-            treeNode5.Text = "Setup";
-            treeNode6.Name = "cWareReports";
-            treeNode6.Text = "Reports";
-            treeNode7.ImageIndex = 6;
-            treeNode7.Name = "pWI";
-            treeNode7.SelectedImageIndex = 6;
-            treeNode7.Text = "Warehouse & Inventory";
-            treeNode8.Name = "cRetailProcess";
-            treeNode8.Text = "Process";
-            treeNode9.Name = "cRetailSetup";
-            treeNode9.Text = "Setup";
-            treeNode10.Name = "cRetailReports";
-            treeNode10.Text = "Reports";
-            treeNode11.ImageIndex = 7;
-            treeNode11.Name = "pRetail";
-            treeNode11.SelectedImageIndex = 7;
-            treeNode11.Text = "Retail";
-            treeNode12.Name = "cHRProcess";
-            treeNode12.Text = "Process";
-            treeNode13.Name = "cHRSetup";
-            treeNode13.Text = "Setup";
-            treeNode14.Name = "cHRReports";
-            treeNode14.Text = "Reports";
-            treeNode15.ImageIndex = 8;
-            treeNode15.Name = "pHR";
-            treeNode15.SelectedImageIndex = 8;
-            treeNode15.Text = "Human Resource";
-            treeNode16.Name = "cAccountingProcess";
-            treeNode16.Text = "Process";
-            treeNode17.Name = "cAccountingSetup";
-            treeNode17.Text = "Setup";
-            treeNode18.Name = "cAccountingReports";
-            treeNode18.Text = "Reports";
-            treeNode19.ImageIndex = 0;
-            treeNode19.Name = "pAccounting";
-            treeNode19.Text = "Accounting";
-            treeNode20.Name = "cAdminProcess";
-            treeNode20.Text = "Process";
-            treeNode21.Name = "cAdminSetup";
-            treeNode21.Text = "Setup";
-            treeNode22.Name = "cAdminReports";
-            treeNode22.Text = "Reports";
-            treeNode23.ImageIndex = 4;
-            treeNode23.Name = "pAdmin";
-            treeNode23.SelectedImageIndex = 4;
-            treeNode23.Text = "Administration";
+            treeNode5.Name = "storage_dimension_group";
+            treeNode5.Text = "Storage Dimension Group";
+            treeNode6.Name = "item_model_group";
+            treeNode6.Text = "Item Model Group";
+            treeNode7.Name = "tracking_group";
+            treeNode7.Text = "Tracking Dimension Group";
+            treeNode8.Name = "reserv_hierarchy";
+            treeNode8.Text = "Reservation Hierarchy";
+            treeNode9.Name = "product";
+            treeNode9.Text = "Product";
+            treeNode10.Name = "cWareSetup";
+            treeNode10.Text = "Setup";
+            treeNode11.Name = "cWareReports";
+            treeNode11.Text = "Reports";
+            treeNode12.ImageIndex = 6;
+            treeNode12.Name = "pWI";
+            treeNode12.SelectedImageIndex = 6;
+            treeNode12.Text = "Warehouse & Inventory";
+            treeNode13.Name = "cRetailProcess";
+            treeNode13.Text = "Process";
+            treeNode14.Name = "cRetailSetup";
+            treeNode14.Text = "Setup";
+            treeNode15.Name = "cRetailReports";
+            treeNode15.Text = "Reports";
+            treeNode16.ImageIndex = 7;
+            treeNode16.Name = "pRetail";
+            treeNode16.SelectedImageIndex = 7;
+            treeNode16.Text = "Retail";
+            treeNode17.Name = "cHRProcess";
+            treeNode17.Text = "Process";
+            treeNode18.Name = "cHRSetup";
+            treeNode18.Text = "Setup";
+            treeNode19.Name = "cHRReports";
+            treeNode19.Text = "Reports";
+            treeNode20.ImageIndex = 8;
+            treeNode20.Name = "pHR";
+            treeNode20.SelectedImageIndex = 8;
+            treeNode20.Text = "Human Resource";
+            treeNode21.Name = "cAccountingProcess";
+            treeNode21.Text = "Process";
+            treeNode22.Name = "cAccountingSetup";
+            treeNode22.Text = "Setup";
+            treeNode23.Name = "cAccountingReports";
+            treeNode23.Text = "Reports";
+            treeNode24.ImageIndex = 0;
+            treeNode24.Name = "pAccounting";
+            treeNode24.Text = "Accounting";
+            treeNode25.Name = "cAdminProcess";
+            treeNode25.Text = "Process";
+            treeNode26.Name = "cAdminSetup";
+            treeNode26.Text = "Setup";
+            treeNode27.Name = "cAdminReports";
+            treeNode27.Text = "Reports";
+            treeNode28.ImageIndex = 4;
+            treeNode28.Name = "pAdmin";
+            treeNode28.SelectedImageIndex = 4;
+            treeNode28.Text = "Administration";
             this.tvModule.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode11,
-            treeNode15,
-            treeNode19,
-            treeNode23});
+            treeNode12,
+            treeNode16,
+            treeNode20,
+            treeNode24,
+            treeNode28});
             this.tvModule.SelectedImageIndex = 0;
             this.tvModule.Size = new System.Drawing.Size(238, 485);
             this.tvModule.TabIndex = 6;
@@ -243,19 +276,6 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(950, 7);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(15, 16);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnClose.TabIndex = 3;
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // pBody
             // 
             this.pBody.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -281,10 +301,10 @@
             this.Load += new System.EventHandler(this.frMain_Load);
             this.pHeader.ResumeLayout(false);
             this.pHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.pSidebar.ResumeLayout(false);
             this.pSidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
         }
