@@ -141,3 +141,4 @@ C:\Users\cstablazon\Source\Repos\ACP3\ACP\obj\Debug\ACP.frmCatHierarchy.resource
 C:\Users\cstablazon\Source\Repos\ACP3\ACP\obj\Debug\ACP.frmManageProduct.resources
 C:\Users\cstablazon\Source\Repos\ACP3\ACP\obj\Debug\ACP.Properties.Resources.resources
 C:\Users\cstablazon\Source\Repos\ACP3\ACP\obj\Debug\ACP.csproj.GenerateResource.Cache
+C:\Users\ietora\Source\Repos\ACP2\ACP\bin\Debug\ACP.exe.config
