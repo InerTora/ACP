@@ -107,6 +107,12 @@
     <Compile Include="frmSupplierMgt.Designer.cs">
       <DependentUpon>frmSupplierMgt.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTrackingGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrackingGroup.Designer.cs">
+      <DependentUpon>frmTrackingGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmviewSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSupplierMgt.resx">
       <DependentUpon>frmSupplierMgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrackingGroup.resx">
+      <DependentUpon>frmTrackingGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmviewSupplier.resx">
       <DependentUpon>frmviewSupplier.cs</DependentUpon>
