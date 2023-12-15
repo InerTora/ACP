@@ -41,7 +41,6 @@
             this.dgvItemModel = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.cbSgroup = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -72,9 +71,9 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btEdit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(338, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(527, 66);
+            this.panel1.Size = new System.Drawing.Size(865, 66);
             this.panel1.TabIndex = 58;
             // 
             // btnRefresh
@@ -107,6 +106,7 @@
             this.btDelete.Text = "\r\nDelete";
             this.btDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // btnAdd
             // 
@@ -138,14 +138,15 @@
             this.btEdit.Text = "\r\nEdit";
             this.btEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btEdit.UseVisualStyleBackColor = true;
+            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
             // 
             // sidebar
             // 
             this.sidebar.Controls.Add(this.dgvItemModel);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidebar.Location = new System.Drawing.Point(0, 2);
+            this.sidebar.Location = new System.Drawing.Point(0, 68);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(338, 529);
+            this.sidebar.Size = new System.Drawing.Size(338, 463);
             this.sidebar.TabIndex = 60;
             // 
             // dgvItemModel
@@ -163,14 +164,15 @@
             this.dgvItemModel.ReadOnly = true;
             this.dgvItemModel.RowHeadersVisible = false;
             this.dgvItemModel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvItemModel.Size = new System.Drawing.Size(338, 529);
+            this.dgvItemModel.Size = new System.Drawing.Size(338, 463);
             this.dgvItemModel.TabIndex = 0;
+            this.dgvItemModel.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemModel_CellClick);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Maroon;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(0, 66);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(865, 2);
             this.panel3.TabIndex = 59;
@@ -181,21 +183,6 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "folder (4).png");
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Enabled = false;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(295, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 36);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // cbSgroup
             // 
             this.cbSgroup.FormattingEnabled = true;
@@ -203,6 +190,8 @@
             this.cbSgroup.Name = "cbSgroup";
             this.cbSgroup.Size = new System.Drawing.Size(322, 28);
             this.cbSgroup.TabIndex = 15;
+            this.cbSgroup.SelectionChangeCommitted += new System.EventHandler(this.cbSgroup_SelectionChangeCommitted);
+            this.cbSgroup.SelectedValueChanged += new System.EventHandler(this.cbSgroup_SelectedValueChanged);
             // 
             // label1
             // 
@@ -231,10 +220,10 @@
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(343, 27);
             this.txtDesc.TabIndex = 1;
+            this.txtDesc.TextChanged += new System.EventHandler(this.txtDesc_TextChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.cbSgroup);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
@@ -261,6 +250,7 @@
             this.btnCreate.TabIndex = 8;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // errorProvider1
             // 
@@ -272,14 +262,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 531);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmItemModelGroup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmItemModelGroup";
+            this.Load += new System.EventHandler(this.frmItemModelGroup_Load);
             this.panel1.ResumeLayout(false);
             this.sidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemModel)).EndInit();
@@ -303,7 +294,6 @@
         private System.Windows.Forms.DataGridView dgvItemModel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cbSgroup;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
