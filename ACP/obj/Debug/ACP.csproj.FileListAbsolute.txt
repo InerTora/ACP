@@ -167,3 +167,4 @@ C:\Users\ietora\Source\Repos\ACP3\ACP\obj\Debug\ACP.csproj.GenerateResource.Cach
 C:\Users\ietora\Source\Repos\ACP3\ACP\obj\Debug\ACP.exe
 C:\Users\ietora\Source\Repos\ACP3\ACP\obj\Debug\ACP.pdb
 C:\Users\cstablazon\Source\Repos\ACP7\ACP\bin\Debug\ACP.exe.config
+C:\Users\ietora\Source\Repos\ACP4\ACP\bin\Debug\ACP.exe.config
