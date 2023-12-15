@@ -65,6 +65,12 @@
     <Compile Include="frmAddSupplier.Designer.cs">
       <DependentUpon>frmAddSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmItemModelGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemModelGroup.Designer.cs">
+      <DependentUpon>frmItemModelGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListOfAddress.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     </Compile>
     <Compile Include="frmRecordType.Designer.cs">
       <DependentUpon>frmRecordType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStorageGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStorageGroup.Designer.cs">
+      <DependentUpon>frmStorageGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSupplierMgt.cs">
       <SubType>Form</SubType>
@@ -146,6 +158,9 @@
     <EmbeddedResource Include="frmAddSupplier.resx">
       <DependentUpon>frmAddSupplier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmItemModelGroup.resx">
+      <DependentUpon>frmItemModelGroup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListOfAddress.resx">
       <DependentUpon>frmListOfAddress.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecordType.resx">
       <DependentUpon>frmRecordType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStorageGroup.resx">
+      <DependentUpon>frmStorageGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSupplierMgt.resx">
       <DependentUpon>frmSupplierMgt.cs</DependentUpon>
